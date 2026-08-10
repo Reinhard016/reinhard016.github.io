@@ -5,13 +5,13 @@ import { papers } from "../data/papers.js";
 const sorted = [...papers].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 const base = import.meta.env.BASE_URL;
 ---
-<Layout title="ZZK · Home" description="ZZK 的个人主页：papers、notes 与一些酷东西">
+<Layout title="Zekun Zhang · Home" description="Zekun Zhang 的个人主页：papers、notes 与一些酷东西">
   <div class="wrap">
     <section class="hero">
       <h1>
-        嗨，我是 <span class="grad">Zekun Zhang</span> 👋<br />
-        做一些关于<span class="grad"> ML & 分布式优化 </span>的研究
+        嗨，我是 <span class="grad">Zekun Zhang</span> 👋
       </h1>
+      <p class="subtitle">Interested in <span class="grad">DiT / Video Generation</span></p>
       <p class="lead">
         这里放我的论文、随手写的 notes，以及一些我觉得酷的东西。
         欢迎随便逛逛。
