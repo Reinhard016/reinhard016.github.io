@@ -186,6 +186,8 @@ section.block .sub { color: var(--fg-dim); margin: 0 0 22px; }
 .card:hover::after { opacity: 1; }
 .card h3 { margin: 0 0 6px; font-size: 1.12rem; }
 .card .meta { color: var(--fg-dim); font-size: 0.85rem; margin-bottom: 8px; }
+.card .authors { font-size: 0.9rem; }
+.card .authors strong { color: var(--accent-2); font-weight: 700; }
 .card p { margin: 0; color: var(--fg-dim); font-size: 0.95rem; }
 
 .tag {
