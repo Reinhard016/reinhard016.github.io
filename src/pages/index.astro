@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { papers } from "../data/papers.js";
+
+const sorted = [...papers].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="ZZK · Home" description="ZZK 的个人主页：papers、notes 与一些酷东西">
+  <div class="wrap">
+    <section class="hero">
+      <h1>
+        嗨，我是 <span class="grad">ZZK</span> 👋<br />
+        做一些关于<span class="grad"> ML & 分布式优化 </span>的研究
+      </h1>
+      <p class="lead">
+        这里放我的论文、随手写的 notes，以及一些我觉得酷的东西。
+        欢迎随便逛逛。
+      </p>
+      <div class="chips">
+        <a class="chip" href={`${base}#papers`}>📄 Papers</a>
+        <a class="chip" href={`${base}notes`}>📝 Notes</a>
+        <a class="chip" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">💻 GitHub</a>
+        <a class="chip" href="https://scholar.google.com/" target="_blank" rel="noopener">🎓 Scholar</a>
+        <a class="chip" href="mailto:you@example.com">✉️ Email</a>
+      </div>
+    </section>
+
+    <section class="block" id="papers">
+      <h2>Papers</h2>
+      <p class="sub">精选论文 · 完整列表见下方</p>
+      <div class="grid cols-1">
+        {sorted.map((p) => (
+          <div class="card">
+            <div class="meta">
+              {p.venue && <span class="tag venue">{p.venue}</span>}
+              {p.tags?.map((t) => <span class="tag">{t}</span>)}
+            </div>
+            <h3>{p.title}</h3>
+            <p class="meta">{p.authors}</p>
+            {p.abstract && <p>{p.abstract}</p>}
+            <div class="paper-links" style="margin-top:10px">
+              {p.links?.pdf && <a href={p.links.pdf} target="_blank" rel="noopener">PDF ↗</a>}
+              {p.links?.code && <a href={p.links.code} target="_blank" rel="noopener">Code ↗</a>}
+              {p.links?.project && <a href={p.links.project} target="_blank" rel="noopener">Project ↗</a>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</Layout>
