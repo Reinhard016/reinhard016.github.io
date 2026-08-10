@@ -178,6 +178,7 @@ section.block .sub { color: var(--fg-dim); margin: 0 0 22px; }
   content: "";
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 0%), rgba(124,92,255,0.14), transparent 40%);
   opacity: 0;
   transition: opacity 0.3s;
@@ -202,6 +203,7 @@ section.block .sub { color: var(--fg-dim); margin: 0 0 22px; }
 }
 .tag.venue { background: rgba(255,92,138,0.12); color: var(--accent-3); border-color: rgba(255,92,138,0.25); }
 
+.paper-links { position: relative; z-index: 1; }
 .paper-links a {
   color: var(--accent-2);
   text-decoration: none;

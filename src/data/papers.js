@@ -20,7 +20,7 @@ export const papers = [
   {
     title:
       "RoPeSLR: 3D RoPE-driven Sparse-LowRank Attention for Efficient Diffusion Transformers",
-    authors: "Yuxi Liu, **Zekun Zhang**, Yaxiang Cai, Ranjia Deng, Yutong He, Kun Yuan",
+    authors: "Yuxi Liu, **Zekun Zhang**, Yixiang Cai, Renjia Deng, Yutong He, Kun Yuan",
     venue: "NeurIPS 2026 (under review)",
     year: 2026,
     tags: ["Video Generation", "Efficient Attention", "RoPE"],
@@ -36,7 +36,7 @@ export const papers = [
     title:
       "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
     authors:
-      "Yutong He, Daibo Li, Guohong Li, Jiane Geng, Zhengyang Huang, Can Ren, **Zekun Zhang**, Yifan Liu, Shuchen Zhu, Hengrui Zheng, Boao Kong, Ming Sun, Shu Li, Chenyi Li, Jiang Hu, Kun Yuan, Zaiwen Wen, Pingwen Zhang",
+      "Yutong He, Daibo Li, Guohong Li, Jiahe Geng, Zhengyang Huang, Can Ren, **Zekun Zhang**, Yifan Liu, Shuchen Zhu, Hengrui Zhang, Boao Kong, Ming Sun, Shu Li, Chenyi Li, Jiang Hu, Kun Yuan, Zaiwen Wen, Pingwen Zhang",
     venue: "Nature Machine Intelligence (under review)",
     year: 2026,
     tags: ["LLM Agents", "Scientific Discovery", "Multi-Agent"],
