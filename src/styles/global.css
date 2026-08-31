@@ -139,6 +139,27 @@ nav.top a:hover { color: var(--fg); background: var(--card); }
   transition: transform 0.15s, border-color 0.2s, background 0.2s;
 }
 .chip:hover { transform: translateY(-2px); border-color: var(--accent); background: rgba(124,92,255,0.12); }
+button.chip { cursor: pointer; font-family: inherit; }
+
+/* toast (copied hint) */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(20, 22, 34, 0.95);
+  border: 1px solid var(--accent);
+  color: var(--fg);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 100;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 /* section */
 section.block { padding: 40px 0; }
