@@ -4,6 +4,54 @@
 export const papers = [
   {
     title:
+      "SparkDiffusion: Mitigating the High-Sparsity Trap --- A Unified Framework for up to 265× Single-GPU Acceleration of Visual Generation",
+    authors:
+      "Yuxi Liu, Haoyu Li, **Zekun Zhang**, Tengxu Sun, Yixiang Cai, Jiayong Li, Yifei Xia, Tianle Liu, Baole Ai, Ang Wang, Jiamang Wang, Lin Qu, Kai Zhang, Kun Yuan, Bin Cui",
+    venue: "arXiv preprint",
+    year: 2026,
+    tags: ["Video Generation", "Sparse Attention", "Acceleration"],
+    abstract:
+      "提出统一加速框架应对高稀疏陷阱：结合短稀疏预热、少步轨迹混合蒸馏、FP8 量化与融合核，在 Wan2.1/2.2 和 T2V/I2V 任务上实现 97% 注意力稀疏度 + 强视觉质量，单 GPU 端到端加速高达 265×（CFG-free 3 步推理，Wan2.1-T2V-14B-720P，RTX-5090）。",
+    links: {
+      pdf: "https://arxiv.org/abs/2609.23153",
+      code: "",
+      project: "",
+    },
+  },
+  {
+    title:
+      "RoLA: Rotary-Positioned Low-Rank Linear Attention for Efficient Diffusion Transformers",
+    authors:
+      "**Zekun Zhang**, Yixiang Cai, Yuxi Liu, Tengxu Sun, Tianle Liu, Zhoutong Wu, Haoyu Li, Baole Ai, Ang Wang, Jiamang Wang, Lin Qu, Kun Yuan",
+    venue: "arXiv preprint",
+    year: 2026,
+    tags: ["Video Generation", "Low-Rank Attention", "RoPE"],
+    abstract:
+      "针对视频 DiT 中 RoPE 与低秩线性全局分支的兼容性问题，提出 RoLA：通过在非线性特征映射前应用 RoPE、重用截断的预训练旋转调度，实现线性时间复杂度的低秩全局分支 + 相对位置感知，90% 稀疏度下保持生成质量并获得 2.63× 端到端加速（Wan2.1-14B, 720P）。",
+    links: {
+      pdf: "https://arxiv.org/abs/2609.06712",
+      code: "",
+      project: "",
+    },
+  },
+  {
+    title:
+      "CrossDistill: Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation",
+    authors:
+      "Yuxi Liu, Haoyu Li, Yixiang Cai, Tengxu Sun, **Zekun Zhang**, Baole Ai, Ang Wang, Jiamang Wang, Lin Qu, Kun Yuan, Kai Zhang",
+    venue: "arXiv preprint",
+    year: 2026,
+    tags: ["Distillation", "Few-Step Generation", "Diffusion"],
+    abstract:
+      "少步蒸馏需平衡多样性与保真度：轨迹蒸馏保留模态覆盖，分布匹配锐化样本。CrossDistill 提出轨迹级混合框架，在交叉点切分轨迹，高噪声区间用轨迹保持目标、低噪声区间用分布匹配目标，通过交叉耦合实现噪声级别调度策略；在 T2V 和 I2V 扩散模型上验证了质量-多样性前沿拓展。",
+    links: {
+      pdf: "https://arxiv.org/abs/2609.14725",
+      code: "",
+      project: "",
+    },
+  },
+  {
+    title:
       "Mixture of Distributions Matters: Dynamic Sparse Attention for Efficient Video Diffusion Transformers",
     authors: "Yuxi Liu, Yipeng Hu, **Zekun Zhang**, Kunze Jiang, Kun Yuan",
     venue: "ICML 2026",
